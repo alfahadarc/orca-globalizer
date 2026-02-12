@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/orca_globalizer/__init__.py
+src/orca_globalizer/globalizer.py
+src/orca_globalizer.egg-info/PKG-INFO
+src/orca_globalizer.egg-info/SOURCES.txt
+src/orca_globalizer.egg-info/dependency_links.txt
+src/orca_globalizer.egg-info/requires.txt
+src/orca_globalizer.egg-info/top_level.txt
+tests/test_globalizer.py

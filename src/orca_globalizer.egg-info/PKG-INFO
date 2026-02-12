@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: orca-globalizer
+Version: 0.1.0
+Summary: Convert ORCA node-orbit vectors (15/73) into global graphlet count vectors.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.21
+
+# orca-globalizer
+
+Convert ORCA per-node orbit vectors into global graphlet count vectors.
+
+## Install (editable)
+pip install -e .
+
+## Usage
+import numpy as np
+from orca_globalizer import globalize_orca
+
+node_vectors = np.loadtxt("orca_output.txt")  # N x 15 (orca_node=4) or N x 73 (orca_node=5)
+g = globalize_orca(node_vectors, orca_node=5, method="sum", log_transform=False)
+print(g.shape)  # (30,)
