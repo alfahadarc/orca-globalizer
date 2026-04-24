@@ -9,15 +9,14 @@ description = "Convert ORCA node-orbit vectors (15/73) into global graphlet coun
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["numpy>=1.21"]
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Abdullah Al Fahad", email = "alfahadarc@gmail.com" }
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-license = "MIT"
-license-files = ["LICENSE"]
-authors = [
-    { name = "Abdullah Al Fahad", email = "alfahadarc@gmail.com" }
-]

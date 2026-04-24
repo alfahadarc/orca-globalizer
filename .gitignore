@@ -1,3 +1,5 @@
 .venv
+.test-venv/
 venv/
 env/
+API-TOKEN
